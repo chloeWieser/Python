@@ -4,13 +4,14 @@
 # name = input('What is your name? ')
 # print("Hello,", name,"!")
 
-
+#alternatively you can do an f'string like p28 of the python 101 course
+#print(f"Hello, {firstName}")
 
 #2 #Same as the first exercise, but this time print the user's name in ALL CAPS, and also tell them the number of letters in their name.
 #(Hint: You'll want to search for documentation on how to uppercase a string.)
 
-#aqString.ToUpper- to make it uppercase
-# aqString.ToUpper
+#aqString.ToUpper- to make it uppercase-(googled a bad page)
+# aqString.ToUpper (this is how other peeps in study group found it on https://www.datacamp.com/search?q=python) and here: https://thehelloworldprogram.com/python/python-string-methods/#:~:text=Performing%20the%20.,of%20the%20characters%20to%20lowercase.
 
 # name = input('WHAT IS YOUR NAME?')- this doesn't have to be caps
 # name.upper()
@@ -61,7 +62,7 @@
 # elif day == 5: 
 #     print("Friday")
 # else:
-#     print("this is not a choice")
+#     print("please choose a number from 0 to 6")
 
 
 # 5. Work or Sleep in
@@ -84,7 +85,7 @@
 
 
 
-#6. Celsius to Fahrenheit
+# 6. Celsius to Fahrenheit
 
 # C = int(input('Temperature in C? '))
 
@@ -102,26 +103,55 @@
     
 #chloe question...what do you set the count at if you want it so start at 0?
 
+# num = 1
+# while num < 11:
+#     num += 1
+#     print(num)
 
-#8. n to m Same as the previous problem, except you will prompt the user for the number to start on and the number to end on. Example session:
+# # num = 0
+# # while num <= 10:
+# #     num += 1
+# #     print(num)
 
-# start = int(input('Start from? '))
-# end = int(input('End on? '))
-# count = start-1
-# while count < end:
-#     count += 1
-#     print(count)
+# # num = 0
+# # while num < 10:
+# #     num += 1
+# #     print(num)
 
 
-#9 Print a 5x5 square of * characters. Example output:
+# #8. n to m Same as the previous problem, except you will prompt the user for the number to start on and the number to end on. Example session:
 
-# count = 0
+# # start = int(input('Start from? '))
+# # end = int(input('End on? '))
+# # count = start-1
+# # while count < end:
+# #     count += 1
+# #     print(count)
 
-# while count < 5:
-#     count += 1
-#     print("*****")
 
-#chloe question....if Ctrl/ is how you quickly comment, how do you quickly uncomment????
+# #9 Print a 5x5 square of * characters. Example output:
+
+# # count = 0
+
+# # while count < 5:
+# #     count += 1
+# #     print("*****")
+
+# #different way to do it
+# num1=0
+# num2=5
+# while num2>=
+
+# #another way to do it
+# numStars = 5
+# print('p' * numStars)
+
+# #different way to do it with a for loop
+# height = 5
+# for i in range(height,0,-1):
+#     print('*'*height)
+
+
 
 
 
@@ -143,6 +173,28 @@
 
 # if(service_choice == "good"):
 #     tip_amount = (20/total)*100 
+# #     print("Tip amount: $%.2f" % tip_amount)
+# #     print("Total amount: $%.2f" % (total + tip_amount))
+# # elif(service_choice == "fair"):
+# #     tip_amount = (15/total)*100 
+# #     print("Tip amount: $%.2f" % tip_amount)
+# #     print("Total amount:$%.2f" % total + tip_amount)
+# # elif(service_choice == "bad"):
+# #     tip_amount = (10/total)*100 
+# #     print("Tip amount:$%.2f" % tip_amount)
+# #     print("Total amount:$%.2f" %  total + tip_amount)
+# # else print("please enter valid service level rating")
+
+
+
+# #2 Allow the ability to divide the check into a equal parts amount a number of people. The user will enter the number of people to be divided amongst. Example session:
+# #found $ sign info here https://thepythonguru.com/python-string-formatting/
+# total= float(input('Total bill amount?'))
+# service_choice= input('Level of service?')
+# split_how_many= int(input('Split how many ways'))
+
+# if(service_choice == "good"):
+#     tip_amount = (20/total)*100 
 #     print("Tip amount: $%.2f" % tip_amount)
 #     print("Total amount: $%.2f" % (total + tip_amount))
 # elif(service_choice == "fair"):
@@ -153,27 +205,40 @@
 #     tip_amount = (10/total)*100 
 #     print("Tip amount:$%.2f" % tip_amount)
 #     print("Total amount:$%.2f" %  total + tip_amount)
-
-
-#2 Allow the ability to divide the check into a equal parts amount a number of people. The user will enter the number of people to be divided amongst. Example session:
-total= float(input('Total bill amount?'))
-service_choice= input('Level of service?')
-split_how_many= int(input('Split how many ways'))
-
-if(service_choice == "good"):
-    tip_amount = (20/total)*100 
-    print("Tip amount: $%.2f" % tip_amount)
-    print("Total amount: $%.2f" % (total + tip_amount))
-elif(service_choice == "fair"):
-    tip_amount = (15/total)*100 
-    print("Tip amount: $%.2f" % tip_amount)
-    print("Total amount:$%.2f" % total + tip_amount)
-elif(service_choice == "bad"):
-    tip_amount = (10/total)*100 
-    print("Tip amount:$%.2f" % tip_amount)
-    print("Total amount:$%.2f" %  total + tip_amount)
     
-amount_per_person = (total + tip_amount)/split_how_many
-print("Amount per person:$%.2f" %  amount_per_person)
+# amount_per_person = (total + tip_amount)/split_how_many
+# print("Amount per person:$%.2f" %  amount_per_person)
 
+# 6. Multiplication Table -Print the multiplication table for numbers from 1 up to 10. Example output: 
+
+
+# multiply_by = 1
+
+# while multiply_by <= 10:
+#     print("1 x", multiply_by, "=", (1*multiply_by))
+#     multiply_by += 1
+
+
+# count = 1
+
+# while count <= 100:
     
+#     multiply_by = 1
+#     while multiply_by < 10:
+#         print(count, "x", multiply_by, "=", (1*multiply_by))
+#         multiply_by += 1
+    
+#     print(count, "x", multiply_by, "=", (1*multiply_by))
+#     count += 1
+
+count = 1
+
+while count <= 10:
+    
+    multiply_by = 1
+    while multiply_by < 10:
+        print(count, "x", multiply_by, "=", (count*multiply_by))
+        multiply_by += 1
+    
+    print(count, "x", multiply_by, "=", (count*multiply_by))
+    count += 1
