@@ -20,7 +20,8 @@
 
 # name = input('what is your name?')
 # name.upper()
-# print("HELLO,", name.upper(),"!")
+# print("HELLO,", name.upper(),"!")   
+# or better to use an f string: print(f"HELLO, {name.upper()}!")
 # print("YOUR NAME HAS", len(name), "LETTERS IN IT! AWESOME!")
 
 
@@ -38,7 +39,11 @@
 
 # name = input('what is your name?')
 # subject = input('what is subject?')
-# statement = "{}'s favorite subject in school is, {}".format(name, subject)
+# # statement = "{}'s favorite subject in school is, {}".format(name, subject)
+# # print(statement)
+
+# # or f string: 
+# statement = f"{name}'s favorite subject in school is, {subject}."
 # print(statement)
 
 
@@ -231,14 +236,14 @@
 #     print(count, "x", multiply_by, "=", (1*multiply_by))
 #     count += 1
 
-count = 1
+# count = 1
 
-while count <= 10:
+# while count <= 10:
     
-    multiply_by = 1
-    while multiply_by < 10:
-        print(count, "x", multiply_by, "=", (count*multiply_by))
-        multiply_by += 1
+#     multiply_by = 1
+#     while multiply_by < 10:
+#         print(count, "x", multiply_by, "=", (count*multiply_by))
+#         multiply_by += 1
     
-    print(count, "x", multiply_by, "=", (count*multiply_by))
-    count += 1
+#     print(count, "x", multiply_by, "=", (count*multiply_by))
+#     count += 1

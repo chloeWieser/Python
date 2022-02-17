@@ -48,8 +48,8 @@ while getTask:
         del myPhonebook[deleteEntry]
     elif selection == 4: 
         for Name, Number in myPhonebook.items():
-            print(Name)
-            print(Number)
+            print(f"{Name}\t\t{Number}")
+            
     elif selection == 5:
         getTask=False
         print("Bye")
