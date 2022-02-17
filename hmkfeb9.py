@@ -217,33 +217,14 @@
 # 6. Multiplication Table -Print the multiplication table for numbers from 1 up to 10. Example output: 
 
 
-# multiply_by = 1
+count = 1
 
-# while multiply_by <= 10:
-#     print("1 x", multiply_by, "=", (1*multiply_by))
-#     multiply_by += 1
-
-
-# count = 1
-
-# while count <= 100:
+while count <= 10:
     
-#     multiply_by = 1
-#     while multiply_by < 10:
-#         print(count, "x", multiply_by, "=", (1*multiply_by))
-#         multiply_by += 1
+    multiply_by = 1
+    while multiply_by < 10:
+        print(f"{count} x {multiply_by} = ",(count*multiply_by))
+        multiply_by += 1
     
-#     print(count, "x", multiply_by, "=", (1*multiply_by))
-#     count += 1
-
-# count = 1
-
-# while count <= 10:
-    
-#     multiply_by = 1
-#     while multiply_by < 10:
-#         print(count, "x", multiply_by, "=", (count*multiply_by))
-#         multiply_by += 1
-    
-#     print(count, "x", multiply_by, "=", (count*multiply_by))
-#     count += 1
+    print(f"{count} x {multiply_by} =",(count*multiply_by))
+    count += 1
