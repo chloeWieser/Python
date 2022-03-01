@@ -215,6 +215,14 @@
 #     word = word.replace(*char)
 # print (word)
 
+def longVowels(word):
+    word = input("enter text")
+    for char in (("a","a"*5),("e","e"*5),("i", "i"*5),("o", "o"*5), ("u", "u"*5)):
+        word = word.replace(*char)
+        return word
+        
+print(longVowels(man))
+
 # # 7. Caesar Cipher
 # Given a string, print the Caesar Cipher (or ROT13) of the string.
 # from ast import mod

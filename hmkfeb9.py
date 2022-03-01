@@ -136,12 +136,19 @@
 
 # #9 Print a 5x5 square of * characters. Example output:
 
-# # count = 0
 
-# # while count < 5:
-# #     count += 1
-# #     print("*****")
 
+# while count < numStars:
+#     count += 1
+#     print("*" * numStars)
+
+def printStars(numStars):
+    count = 1
+    while count <= numStars:
+        print("*" * numStars)
+        count += 1   
+
+print(printStars(5))
 # #different way to do it
 # num1=0
 # num2=5
@@ -217,14 +224,14 @@
 # 6. Multiplication Table -Print the multiplication table for numbers from 1 up to 10. Example output: 
 
 
-count = 1
+# count = 1
 
-while count <= 10:
+# while count <= 10:
     
-    multiply_by = 1
-    while multiply_by < 10:
-        print(f"{count} x {multiply_by} = ",(count*multiply_by))
-        multiply_by += 1
+#     multiply_by = 1
+#     while multiply_by < 10:
+#         print(f"{count} x {multiply_by} = ",(count*multiply_by))
+#         multiply_by += 1
     
-    print(f"{count} x {multiply_by} =",(count*multiply_by))
-    count += 1
+#     print(f"{count} x {multiply_by} =",(count*multiply_by))
+#     count += 1
